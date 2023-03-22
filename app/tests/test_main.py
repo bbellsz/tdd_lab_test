@@ -9,9 +9,9 @@ def test_read_main():
     response = client.get("/")
     assert response.status_code == 200
     assert response.json() == {"Hello": "World"}
-    
-def test_write_main():
-    name = "Sirada"
-    response = client.post("/callname",json={"name":name})
+
+def test_read_main():
+    name = sirada
+    response = client.post("/")
     assert response.status_code == 200
     assert response.json() == {"Hello": "World"}
