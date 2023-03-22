@@ -10,7 +10,7 @@ def test_read_main():
     assert response.status_code == 200
     assert response.json() == {"Hello": "World"}
 
-def test_read_main():
+def test_write_main():
     name = sirada
     response = client.post("/")
     assert response.status_code == 200
