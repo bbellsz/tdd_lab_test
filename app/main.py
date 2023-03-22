@@ -25,7 +25,7 @@ def read_name(name: str):
     return {"hello": name}
 
 @app.post("/callname/")
-async def readpost_name(name: str):
+def write_name(name: str):
     return {"hello": name}
 
 handler = Mangum(app)
