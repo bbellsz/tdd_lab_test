@@ -12,6 +12,6 @@ def test_read_main():
     
 def test_write_main():
     name = "Sirada"
-    response = client.get("/callname",json={"name":name})
+    response = client.post("/callname",json={"name":name})
     assert response.status_code == 200
     assert response.json() == {"Hello": "World"}
