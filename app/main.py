@@ -20,7 +20,7 @@ def read_name(name: str):
 def read_name(name: str):
     return {"hello": name}
 
-@app.post("/callname")
+@app.post("/callname/{name}")
 def read_name(name: str):
     return {"hello": name}
 
